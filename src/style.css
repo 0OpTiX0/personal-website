@@ -3,19 +3,19 @@
 body {
     font-family: 'SF Pro', sans-serif;
     line-height: 1.6;
-    background-color: #052b50;
+    background-color: #d3d5d6;
 }
 
 /* Header styles colors the words */
 header {
-    background-color: #FF6500;
+    background-color: #929496;
     padding: 20px;
     text-align: center;
 }
 
 h1{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #303258;
+    color: #4a4a4b;
     text-align: center;
     font-size: 50px;
 
@@ -27,11 +27,17 @@ img{
 
 h2{
     font-family: system-ui, -apple-system-body,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #fd7200;
+    color: #4a4a4b;
+    font-size: 25px;
 }
 h3{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:#616ac2
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#828282
+}
+h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #020e6b;
+    font-size: 25px;
 }
 
 /* Nav styles colors the words */
@@ -53,25 +59,58 @@ nav ul li a {
 /* Main section styles colors the words */
 main {
     text-align: center;
-    background-color: #000000;
+    background-color: #dbd9d9;
     margin: 20px;
     text-align: center;
-    border: 1px solid #010313e1;
+    border: 1px solid #e4e4e8e1;
     padding: 20px;
-    color: #1a5497;
+    color:  #373737;
 }
 
 section {
     text-align: center;
-    color: rgb(126, 135, 187);
+    background-color: #bfbfc1;
     margin-bottom: 20px;
-    border: 1px solid #010313e1;
+    border: 1px solid #151516e1;
     padding: 10px;
+}
+/* Section id styles. Custom style for defined section. */
+#intro {
+    text-align: center;
+    background-color:#9f9fa2;
+    color: #929496;
+    font-size: 30px;
 }
 
 footer {
-    background-color: #FF6500;
+    background-color: #4a4a4b;
     text-align: center;
     padding: 10px;
 }
+/* Nav button styles*/
+nav button {
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    background-color: #220ed5;
+    color: white;
+    border-radius: 5px;
+}
 
+/* Hover effect for the buttons */
+nav button:hover {
+    background-color: #0095ff;
+}
+/* this is used for the subpages */
+.subpage{
+    display: none; 
+    padding: 20px;
+    border: 1px solid #e4e4e8e1;
+    margin: 10px auto;
+    max-width: 600px;
+    background-color: #dbd9d9; 
+}
+.subpage.active{
+    display: block; /* Reveal active section*/
+}
