@@ -1,2 +1,0 @@
-To upload a deployment, simply create a zip archive go to compute > workers and pages
-and choose your URL. From there upload using "Create deployment"
