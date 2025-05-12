@@ -2,10 +2,70 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Laudati</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is the content of my website.</p>
+    <section id="head">
+        <div id="navbar"></div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="left-column">
+                <h1>Joseph Laudati</h1>
+                <h2>Hello!</h2>
+                <p>
+                    My name is Joseph Laudati. I am a current student at Clemson University
+                    persuing a degree in Computer Science. I aim to design creative UI's
+                    and intricate back-end systems for problem solving products. Developing
+                    software is my passion and I want to use my skills to help solve
+                    the worlds problems. Wether it be developing a simple website or 
+                    innovating entirely new technologies.
+                    <br>
+                </p>
+                <p>
+                    
+                </p>
+                <h2>Welcome to my website!</h2>
+            </div>
+
+            <div class="right-column">
+                <img src="images/hd.JPEG" class="subImg">
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <div class="left-column">
+                    <h2>Here are some of my accomplishments</h2>
+                    <a href="pages/Official Resume.pdf"><p>Resume</p></a>
+                </div>
+                <div class="right-column">
+                    <h2>Featrued Projects</h2>
+                    <a href="pages/tigerScheduling.html">Tiger Scheduling: 
+                        A Simple Schduling App</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        });
+    </script>
 </body>
+<footer>
+    <p>
+        Copyright Joseph Laudati
+    </p>
+</footer>
 </html>

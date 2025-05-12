@@ -22,12 +22,9 @@ html{
 
 ul{
     list-style-type: none;
+    
 }
-.rotate {
-    display: inline-block;
-    transform: rotate(180deg);
-    transition: transform 0.3s ease;
-}
+
 
 
 section{
@@ -36,14 +33,22 @@ section{
 }
 
 #head{
-    text-align: left;
+
     background-color: #3b3b3b;
     color:#ffffff;
-    padding:1%;
+    padding:2%;
     display: block;
-    font-style: italic;
+    align-items: center;
+    gap: 50px;
+
     
     
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; /* Remove default margin */
 }
 
 footer{
@@ -54,12 +59,12 @@ footer{
     padding:1%;
     display: block;
     font-style: italic;
+    margin-top: auto;
 }
 
 h1{
     font-weight: 200;
-   
-    font-size: xx-large;
+    font-size: 300%;
 }
 h2{
     font-size: x-large;
@@ -76,6 +81,9 @@ img{
     overflow: auto;
     width: 30%;
 }
+.subImg{
+    width: 50%;
+}
 
 
 
@@ -84,7 +92,7 @@ button {
     background-color: rgba(205, 255, 214, 0);
     
     color:rgb(255, 255, 255);
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.86);
+
     margin: .5%;
     padding: auto;
     cursor: pointer;
@@ -126,15 +134,33 @@ a{
     color: #239cff;
 }
 
-/*
-This is for the javascript navbar styling. This enables a common navbar
-for all the pages. 
-*/
+
+
+.container{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-column,
+.right-column{
+    flex: 1;
+    padding: 20px;
+    
+    
+}
+
+
+
+
+
 nav ul {
     list-style: none;  /* Remove bullet points */
     margin: 0;
     padding: 0;
-    display: flex;     /* This arranges the list items in a row */
+    display: flex; 
+    gap: 20px;    /* This arranges the list items in a row */
     justify-content: center;
      /* Optional: centers the items */
 }
@@ -147,7 +173,7 @@ nav ul li:hover{
 .dropdown-content{
     transition: .4ms;
     display: none;
-    position: absolute;
+    position:absolute;
     min-width: 1%;
     z-index: 1;
     background-color: #3b3b3b;
@@ -156,7 +182,7 @@ nav ul li:hover{
 }
 
 .dropdown:hover .dropdown-content{
-    display: block;
+    display:block;
     
 }  
   
