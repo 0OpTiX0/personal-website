@@ -14,18 +14,10 @@ html{
     flex-direction: column;
 }
 
-
-
-
-
-
-
 ul{
     list-style-type: none;
     
 }
-
-
 
 section{
    text-align: center;
@@ -33,16 +25,12 @@ section{
 }
 
 #head{
-
     background-color: #3b3b3b;
     color:#ffffff;
     padding:2%;
     display: block;
     align-items: center;
-    gap: 50px;
-
-    
-    
+    gap: 50px; 
 }
 body {
     display: flex;
@@ -87,19 +75,13 @@ img{
 }
 
 
-
-
 button {
     background-color: rgba(205, 255, 214, 0);
-    
     color:rgb(255, 255, 255);
-
     margin: .5%;
     padding: auto;
     cursor: pointer;
     border: none;
-   
-   
     font-weight: 200;
     font-size: min(5vw, 20px);
 }
@@ -109,7 +91,7 @@ button {
         padding: 6px 12px; /* Reduce padding slightly for smaller screens */
     }
 }
-/* Further adjust for very small screens */
+
 @media (max-width: 400px) {
     button {
         font-size: 3.5vw;
@@ -122,19 +104,15 @@ button {
 
 }
 
-
 button:hover{
     background-color: rgb(126, 126, 126);
     color: rgb(0, 0, 0);
-    
-
 }
 
 a{
 
     color: #239cff;
 }
-
 
 
 .container{
@@ -151,8 +129,6 @@ a{
     
     
 }
-
-
 
 
 
